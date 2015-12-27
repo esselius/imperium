@@ -19,13 +19,6 @@ worker:
   command: worker
   links:
     - kafka:kafka
-scheduler:
-  extends:
-    file: common.yml
-    service: app
-  command: scheduler
-  links:
-    - kafka:kafka
 kafka:
   image: wurstmeister/kafka:0.8.2.0
   ports:
