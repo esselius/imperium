@@ -1,11 +1,96 @@
+GIT
+  remote: git://github.com/karafka/karafka.git
+  revision: a6bbc9e9b35a7ae7c97531a91419eeb0febbbafe
+  specs:
+    karafka (0.4.0.pre.head)
+      activesupport
+      celluloid
+      envlogic
+      poseidon
+      poseidon_cluster
+      puma
+      sidekiq
+      sinatra
+      waterdrop
+      worker-glass
+
 GEM
   remote: https://rubygems.org/
   specs:
+    activesupport (4.2.5)
+      i18n (~> 0.7)
+      json (~> 1.7, >= 1.7.7)
+      minitest (~> 5.1)
+      thread_safe (~> 0.3, >= 0.3.4)
+      tzinfo (~> 1.1)
+    aspector (0.14.0)
+    celluloid (0.17.2)
+      celluloid-essentials
+      celluloid-extras
+      celluloid-fsm
+      celluloid-pool
+      celluloid-supervision
+      timers (>= 4.1.1)
+    celluloid-essentials (0.20.5)
+      timers (>= 4.1.1)
+    celluloid-extras (0.20.5)
+      timers (>= 4.1.1)
+    celluloid-fsm (0.20.5)
+      timers (>= 4.1.1)
+    celluloid-pool (0.20.5)
+      timers (>= 4.1.1)
+    celluloid-supervision (0.20.5)
+      timers (>= 4.1.1)
+    concurrent-ruby (1.0.0)
+    connection_pool (2.2.0)
+    envlogic (1.0.0)
+      activesupport
+    hitimes (1.2.3)
+    i18n (0.7.0)
+    json (1.8.3)
+    minitest (5.8.3)
+    null-logger (0.1.0)
+    poseidon (0.0.5)
+    poseidon_cluster (0.3.3)
+      poseidon (>= 0.0.5, < 0.1.0)
+      zk
+    puma (2.15.3)
+    rack (1.6.4)
+    rack-protection (1.5.3)
+      rack
+    rake (10.4.2)
+    redis (3.2.2)
+    sidekiq (4.0.1)
+      concurrent-ruby (~> 1.0)
+      connection_pool (~> 2.2, >= 2.2.0)
+      json (~> 1.0)
+      redis (~> 3.2, >= 3.2.1)
+    sinatra (1.4.6)
+      rack (~> 1.4)
+      rack-protection (~> 1.4)
+      tilt (>= 1.3, < 3)
+    thread_safe (0.3.5)
+    tilt (2.0.1)
+    timers (4.1.1)
+      hitimes
+    tzinfo (1.2.2)
+      thread_safe (~> 0.1)
+    waterdrop (0.1.13)
+      aspector
+      bundler
+      connection_pool
+      null-logger
+      poseidon
+      rake
+    worker-glass (0.2.0)
+      activesupport
+      null-logger
+    zk (1.9.6)
+      zookeeper (~> 1.4.0)
+    zookeeper (1.4.11)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
-
-BUNDLED WITH
-   1.10.5
+  karafka!
