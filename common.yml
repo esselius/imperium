@@ -1,0 +1,5 @@
+app:
+  image: imperium
+  environment:
+    KAFKA_URL: "kafka://kafka:9092/imperium"
+    IMPERIUM_VERSION: "dev"
